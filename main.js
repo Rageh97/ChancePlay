@@ -73,12 +73,13 @@ let clientSwiper = new Swiper(".client-carousel", {
     el: ".client-carousel .swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 2000,
-  },
+  // autoplay: {
+  //   delay: 2000,
+  // },
   breakpoints: {
     0: {
       slidesPerView: 1.7,
+      spaceBetween: 60,
     },
     480: {
       slidesPerView: 2.2,

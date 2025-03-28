@@ -59,7 +59,7 @@ body {
 }
 
 .swiper-slide-active > div {
-  transform: scale(1.15);
+  transform: scale(1.30);
 }
 .swiper-pagination-bullet {
   background: #4f46e5;

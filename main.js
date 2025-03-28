@@ -1,5 +1,3 @@
-
-
 let swiper = new Swiper(".centered-slide-carousel", {
   centeredSlides: true,
   slidesPerView: "auto", // للسماح بعرض أكثر من بطاقة
@@ -9,7 +7,10 @@ let swiper = new Swiper(".centered-slide-carousel", {
   spaceBetween: 40,
   slideToClickedSlide: true,
   rtl: true,
-
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".centered-slide-carousel .swiper-pagination",
     clickable: true,
@@ -39,7 +40,10 @@ let valuecarousel = new Swiper(".value-carousel", {
   loop: true,
   spaceBetween: 40,
   slideToClickedSlide: true,
-
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".value-carousel .swiper-pagination",
     clickable: true,
@@ -73,9 +77,9 @@ let clientSwiper = new Swiper(".client-carousel", {
     el: ".client-carousel .swiper-pagination",
     clickable: true,
   },
-  // autoplay: {
-  //   delay: 2000,
-  // },
+  autoplay: {
+    delay: 2000,
+  },
   breakpoints: {
     0: {
       slidesPerView: 1.7,

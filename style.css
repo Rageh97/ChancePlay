@@ -146,13 +146,13 @@ body {
 /* ................responsive.. */
 @media (max-width: 450px) {
   .title {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
   }
   .sub-title {
-    font-size: 0.5rem;
+    font-size: 0.7rem;
   }
   .image-title {
-    width: 8rem;
+    width: 6rem;
   }
   .servise-card {
     max-width: 100px;

@@ -43,57 +43,53 @@
       شريط اعلاني
     </div>
 
-    <header
-      class="relative overflow-hidden py-4 px-4 sm:px-6 lg:px-8 mb-15 lg:mb-30"
-    >
+    <header class="relative overflow-hidden py-4 px-4 sm:px-6 lg:px-8 mb-15 lg:mb-30">
       <!-- شريط التنقل -->
       <nav class="flex items-center justify-between">
-        <div class="text-2xl sm:text-4xl text-[#682edd]">
+        <div class="text-2xl sm:text-4xl text-[#682edd] cursor-pointer">
           <i class="fas fa-bars"></i>
         </div>
-        <div class="text-2xl sm:text-4xl text-[#682edd]">
+        <div class="text-2xl sm:text-4xl text-[#682edd] cursor-pointer">
           <i class="fas fa-user"></i>
         </div>
       </nav>
-
+    
       <!-- نصف دائرة + اللوجو -->
       <div class="flex justify-center relative -mt-13 sm:-mt-14">
-        <div
-          class="w-50 sm:w-80 md:w-[400px] h-25 sm:h-40 md:h-[200px] bg-[#000028] rounded-b-full shadow-[inset_0_-20px_30px_#504b65] relative z-10"
-        >
+        <div class=" w-50 sm:w-80 md:w-[400px] h-25 sm:h-40 md:h-[200px] bg-[#000028] rounded-b-full shadow-[inset_0_-20px_30px_#504b65] relative z-10">
           <img
             src="/images/logo.png"
             alt="Logo"
-            class="absolute left-1/2 -translate-x-1/2 top-[5%] w-20 sm:w-24 md:w-28 lg:w-40 z-20"
+            class="absolute  fade-in-down left-1/2 -translate-x-1/2 top-[5%] w-20 sm:w-24 md:w-28 lg:w-40 z-20 cursor-pointer"
           />
         </div>
       </div>
-
+    
       <!-- المحتوى -->
-      <div class="text-center mt-16 sm:mt-20 space-y-3 px-2 sm:px-4">
+      <div class="fade-in-down text-center mt-16 sm:mt-20 space-y-3 md:space-y-10 px-2 sm:px-4">
         <h1 class="text-xl sm:text-4xl md:text-5xl font-bold">
-          شانس بلاي || <span class="text-white">CHANCE PALY</span>
+          شانس بلاي || <span class="text-white ">CHANCE PALY</span>
         </h1>
         <p class="text-sm sm:text-2xl md:text-3xl text-gray-300">
           حمل، جرب، واستمتع.. كل شي بلس
         </p>
-
+    
         <!-- الأزرار -->
         <div class="space-y-4 mt-8 sm:mt-10">
           <button
-            class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-3 py-3 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white"
+            class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-3 py-3 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white cursor-pointer"
           >
             تثبيت تطبيق ابل
           </button>
           <br />
           <button
-            class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-2 sm:px-6 py-3 sm:py-4 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white"
+            class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-2 sm:px-6 py-3 sm:py-4 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white cursor-pointer"
           >
             تثبيت تطبيق الاندرويد
           </button>
         </div>
       </div>
-
+    
       <!-- زخارف يمين ويسار -->
       <img
         src="/images/plus-1.png"
@@ -116,6 +112,7 @@
         alt="decor"
       />
     </header>
+    
 
     <!-- ................................... -->
     <!-- سكشن الإحصائيات -->
@@ -212,7 +209,7 @@
       <!-- محتوى الإحصائيات -->
       <div
         id="stats-cards"
-        class="z-10 flex items-center justify-center gap-5 md:gap-15 w-full mt-20 mb-20 text-center flex-wrap"
+        class=" z-10 flex items-center justify-center gap-5 md:gap-15 w-full mt-20 mb-20 text-center flex-wrap"
       >
         <!-- بطاقة -->
         <div
@@ -277,6 +274,7 @@
     <!-- ...........باقات الاشتراك................. -->
 
     <section
+    id="subscribtions-sec"
       class="text-[var(--text-color)] bg-[var(--main-color)] text-center mt-10"
     >
       <div class="flex items-center justify-between h-20 md:h-50">
@@ -304,7 +302,7 @@
         />
       </div>
 
-      <div class="swiper w-full max-w-6xl centered-slide-carousel relative">
+      <div class="fade-in-down swiper w-full max-w-6xl centered-slide-carousel relative">
         <div class="swiper-wrapper py-20 sm:py-25 flex items-center">
           <div class="swiper-slide flex justify-center">
             <div class="w-full grid place-items-center">
@@ -370,7 +368,7 @@
 
               <!-- زر الاشتراك -->
               <button
-                class="mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
+                class="cursor-pointer mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
               >
                 اشترك الآن
               </button>
@@ -440,7 +438,7 @@
 
               <!-- زر الاشتراك -->
               <button
-                class="mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
+                class="cursor-pointer mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
               >
                 اشترك الآن
               </button>
@@ -510,7 +508,7 @@
 
               <!-- زر الاشتراك -->
               <button
-                class="mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
+                class="cursor-pointer mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
               >
                 اشترك الآن
               </button>
@@ -580,7 +578,7 @@
 
               <!-- زر الاشتراك -->
               <button
-                class="mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
+                class="cursor-pointer mt-6 w-28 sm:w-35 md:w-40 bg-gradient-to-r from-purple-400 to-indigo-500 py-1 sm:py-1.5 rounded-full text-white font-bold shadow-lg text-xs sm:text-sm md:text-lg border border-white"
               >
                 اشترك الآن
               </button>
@@ -595,6 +593,7 @@
 
     <!--.......    تسوق خدماتنا...................  -->
     <section
+    id="our-services"
       class="text-[var(--text-color)] bg-[var(--main-color)] text-center mt-20"
     >
       <!-- العنوان والوصف -->
@@ -631,7 +630,7 @@
       >
         <!-- بطاقة 1 -->
         <div
-          class="servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <img
             src="/images/55454.png"
@@ -642,7 +641,7 @@
 
         <!-- بطاقة 2 -->
         <div
-          class="servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <img
             src="/images/55454.png"
@@ -653,7 +652,7 @@
 
         <!-- بطاقة 3 -->
         <div
-          class="servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer servise-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[200px] sm:h-[250px] md:h-[300px] lg:max-w-[250px] lg:h-[400px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <img
             src="/images/55454.png"
@@ -746,7 +745,7 @@
                 <p class="product-price text-sm text-white font-bold">$25</p>
               </div>
               <button
-                class="add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
+                class="cursor-pointer add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
               >
                 اضف للسلة
               </button>
@@ -794,7 +793,7 @@
                 <p class="product-price text-sm text-white font-bold">$25</p>
               </div>
               <button
-                class="add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
+                class="cursor-pointer add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
               >
                 اضف للسلة
               </button>
@@ -842,7 +841,7 @@
                 <p class="product-price text-sm text-white font-bold">$25</p>
               </div>
               <button
-                class="add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
+                class="cursor-pointer add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
               >
                 اضف للسلة
               </button>
@@ -890,7 +889,7 @@
                 <p class="product-price text-sm text-white font-bold">$25</p>
               </div>
               <button
-                class="add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
+                class="cursor-pointer add-to-cart mt-2 mb-2 w-30 py-1 text-xs rounded-lg border border-white text-white"
               >
                 اضف للسلة
               </button>
@@ -940,21 +939,21 @@
       >
         <!-- بطاقة 1 -->
         <div
-          class="material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <!-- <img src="" class="w-full h-full object-cover rounded-[20px]" alt="" /> -->
         </div>
 
         <!-- بطاقة 2 -->
         <div
-          class="material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <!-- <img src="" class="w-full h-full object-cover rounded-[20px]" alt="" /> -->
         </div>
 
         <!-- بطاقة 3 -->
         <div
-          class="material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
+          class="cursor-pointer material-card w-full max-w-[130px] h-[160px] sm:max-w-[200px] md:max-w-[250px] sm:h-[200px] md:h-[260px] lg:max-w-[300px] lg:h-[300px] bg-[#2a2147] rounded-xl border shadow-[10px_10px_30px_#0d0324] overflow-hidden"
         >
           <!-- <img src="" class="w-full h-full object-cover rounded-[20px]" alt="" /> -->
         </div>
@@ -1002,7 +1001,7 @@
     <!-- البطاقات -->
     <div
       id="reviews-swiper"
-      class="swiper w-full max-w-6xl value-carousel relative"
+      class="swiper w-full max-w-6xl client-carousel relative"
     >
       <div class="swiper-wrapper py-20 sm:py-30 flex items-center">
         <!-- بطاقة 1 -->
@@ -1221,7 +1220,7 @@
   <!-- أيقونات التواصل -->
   <div
     id="footer-social-icons"
-    class="flex items-center justify-center mt-8 flex-wrap"
+    class="cursor-pointer flex items-center justify-center mt-8 flex-wrap"
   >
     <img
       src="images/watsap.png"
@@ -1333,7 +1332,7 @@
     >
       <img
         src="/images/wats.png"
-        class="rounded-lg w-7 md:w-10"
+        class="rounded-lg w-7 md:w-10 animate-bounce"
         alt="WhatsApp"
       />
     </a>

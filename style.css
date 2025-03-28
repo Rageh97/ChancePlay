@@ -1,3 +1,4 @@
+
 :root {
   --main-color: #0d0529;
   --text-color: #ffffff;
@@ -45,28 +46,65 @@ body {
 }
 /* ........................ */
 
-/* CSS Code */
-/* .gradient-border-total {
-  position: relative;
-  border-radius: 24px;
-  padding: 2px;
+
+/* .........swipers........... */
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+  direction: rtl;
 }
 
-.gradient-border-total::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 24px;
-  padding: 2px;
-  background: linear-gradient(45deg, #ff00cc, #3333ff);
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-  pointer-events: none;
-} */
+.swiper-wrapper {
+  direction: rtl;
+}
+
+.swiper-slide-active > div {
+  transform: scale(1.15);
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+.swiper-pagination-bullet-active {
+  background: #4f46e5 !important;
+}
+
+/*........................................... */
+
+.iconsSwiper .swiper-slide img {
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  opacity: 0.5;
+  transform: translateY(90px) scale(0.6);
+}
+
+/* المنتصف */
+.iconsSwiper .swiper-slide-active img {
+  transform: translateY(0px) scale(1);
+  z-index: 10;
+
+  opacity: 1;
+}
+
+/* يسار ويمين ) */
+.iconsSwiper .swiper-slide-prev img {
+  transform: translateY(40px) scale(0.8);
+  opacity: 0.9;
+}
+.iconsSwiper .swiper-slide-next img {
+  transform: translateY(40px) scale(0.8);
+  opacity: 0.9;
+}
+
+/* أقصى اليسار واليمين */
+.iconsSwiper .swiper-slide-prev + .swiper-slide-prev img {
+  transform: translateY(55px) scale(0.8) !important;
+  opacity: 0.6;
+}
+.iconsSwiper .swiper-slide-next + .swiper-slide-next img {
+  transform: translateY(55px) scale(0.8) !important;
+  opacity: 0.6;
+}
+
+/* ........Animation.................... */
 @keyframes decors-move {
   0% {
     transform: translate(10, 10) rotate(0deg);
@@ -88,62 +126,21 @@ body {
 .animate-decors-move {
   animation: decors-move 4s ease-in-out infinite;
 }
-/* .................... */
-
-.swiper-slide {
-  transition: transform 0.3s ease;
-  direction: rtl;
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.swiper-wrapper {
-  direction: rtl;
+.fade-in-down {
+  animation: fade-in-down 2s ease-out forwards;
 }
 
-.swiper-slide-active > div {
-  transform: scale(1.15);
-}
-.swiper-pagination-bullet {
-  background: #4f46e5;
-}
-.swiper-pagination-bullet-active {
-  background: #4f46e5 !important;
-}
-
-/* ززززززززززززززززززززز */
-
-.iconsSwiper .swiper-slide img {
-  transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0.5;
-  transform: translateY(90px) scale(0.6);
-}
-
-/* المنتصف */
-.iconsSwiper .swiper-slide-active img {
-  transform: translateY(0px) scale(1);
-  z-index: 10;
-  
-  opacity: 1;
-}
-
-/* يسار ويمين (قريبين من المنتصف) */
-.iconsSwiper .swiper-slide-prev img {
-  transform: translateY(40px) scale(0.8);
-  opacity: 0.9;
-}
-.iconsSwiper .swiper-slide-next img {
-  transform: translateY(40px) scale(0.8);
-  opacity: 0.9;
-}
-
-/* أقصى اليسار واليمين */
-.iconsSwiper .swiper-slide-prev + .swiper-slide-prev img {
-  transform: translateY(55px) scale(0.8) !important;
-  opacity: 0.6;
-}
-.iconsSwiper .swiper-slide-next + .swiper-slide-next img {
-  transform: translateY(55px) scale(0.8) !important;
-  opacity: 0.6;
-}
 /* ................responsive.. */
 @media (max-width: 450px) {
   .title {

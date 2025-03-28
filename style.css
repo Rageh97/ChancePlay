@@ -121,6 +121,7 @@ body {
 .iconsSwiper .swiper-slide-active img {
   transform: translateY(0px) scale(1);
   z-index: 10;
+  
   opacity: 1;
 }
 

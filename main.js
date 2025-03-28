@@ -32,7 +32,7 @@ let swiper = new Swiper(".centered-slide-carousel", {
 let valuecarousel = new Swiper(".value-carousel", {
   centeredSlides: true,
   slidesPerView: "auto",
-
+  effect: 'slide',
   paginationClickable: true,
   loop: true,
   spaceBetween: 40,

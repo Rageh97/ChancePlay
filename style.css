@@ -1,18 +1,26 @@
+:root {
+  --main-color: #0d0529;
+  --text-color: #ffffff;
+  --top-header-bg: #a66bff;
+  --top-header-text: #ffffff;
+}
+
 * {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   font-family: "Cairo", sans-serif;
-  background-color: #0d0529;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--text-color);
   overflow-x: hidden;
 }
 
 /* ..................... */
 .gradient-border-total {
   position: relative;
-  background: #0d0529; /* Background color */
+  background: #0d0529;
 
   box-shadow: 10px 0px 20px 0px rgba(0, 0, 0, 0.3),
     inset 0 -10px 40px rgba(225, 225, 225, 0.1); /* Inset shadow at the bottom */
@@ -59,7 +67,27 @@ body {
   mask-composite: exclude;
   pointer-events: none;
 } */
+@keyframes decors-move {
+  0% {
+    transform: translate(10, 10) rotate(0deg);
+  }
+  25% {
+    transform: translate(-15px, -15px) rotate(30deg);
+  }
+  50% {
+    transform: translate(10, -10px) rotate(0deg);
+  }
+  75% {
+    transform: translate(20px, -20px) rotate(-30deg);
+  }
+  100% {
+    transform: translate(10, 10) rotate(0deg);
+  }
+}
 
+.animate-decors-move {
+  animation: decors-move 4s ease-in-out infinite;
+}
 /* .................... */
 
 .swiper-slide {

@@ -178,8 +178,11 @@ body {
   .image-title {
     width: 6rem;
   }
-  .servise-card {
+  /* .servise-card {
     width: 110px;
+  } */
+  .service{
+    height: 195px;
   }
   .material-card {
     max-width: 100px;

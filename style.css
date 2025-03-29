@@ -182,7 +182,7 @@ body {
     width: 110px;
   } */
   .service{
-    height: 195px;
+    height: 160px;
   }
   .material-card {
     max-width: 100px;
@@ -225,14 +225,16 @@ body {
 
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
+
 }
 
 /* Large devices (small laptops) */
-@media (max-width: 992px) {
+@media (min-width: 992px) {
+ 
 }
 
 /* Extra large devices (desktops) */
-@media (max-width: 1200px) {
+@media (min-width: 1200px) {
 }
 
 /* Extra extra large (large desktops) */

@@ -129,3 +129,47 @@ const iconswiper = new Swiper(".iconsSwiper", {
     },
   },
 });
+  // sidebar
+  document.addEventListener("DOMContentLoaded", function () {
+    console.log(document.getElementById("menu-btn")); // للتأكد من وجود العنصر
+  
+    const menuBtn = document.getElementById("menu-btn");
+    const sidebar = document.getElementById("sidebar");
+    const overlay = document.getElementById("overlay");
+    const mainContent = document.getElementById("main-content");
+  
+    function toggleSidebar() {
+        menuBtn.classList.toggle("active");
+        sidebar.classList.toggle("active");
+        overlay.classList.toggle("active");
+        mainContent.classList.toggle("blur-effect");
+        
+        document.body.style.overflow = sidebar.classList.contains("active") 
+            ? "hidden" 
+            : "";
+    }
+  
+    menuBtn.addEventListener("click", function (e) {
+        e.stopPropagation();
+        toggleSidebar();
+    });
+  
+    overlay.addEventListener("click", toggleSidebar);
+  
+    document.addEventListener("click", function (e) {
+        if (!sidebar.contains(e.target) && e.target !== menuBtn) {
+            sidebar.classList.remove("active");
+            overlay.classList.remove("active");
+            menuBtn.classList.remove("active");
+            mainContent.classList.remove("blur-effect");
+            document.body.style.overflow = "";
+        }
+    });
+  });
+// ............................................
+function toggleSubMenu() {
+  const menu = document.getElementById("subMenu");
+  const arrow = document.getElementById("arrow");
+  menu.classList.toggle("hidden");
+  arrow.classList.toggle("rotate-180");
+}

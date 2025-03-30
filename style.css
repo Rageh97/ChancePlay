@@ -8,6 +8,71 @@
 * {
   box-sizing: border-box;
 }
+/* أنماط السايدبار */
+#sidebar {
+  width: 300px;
+  height: 100vh;
+  background: #2a2147;
+  position: fixed;
+  top: 0;
+  right: -300px; /* مخفي خارج الشاشة */
+  transition: right 0.3s ease;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+}
+
+#sidebar.active {
+  right: 0; /* يظهر عند التنشيط */
+}
+
+/* تأثير Blur للصفحة الرئيسية */
+.page-content {
+  transition: filter 0.4s ease;
+}
+
+.page-content.blur-effect {
+  filter: blur(4px);
+  pointer-events: none;
+}
+
+/* أنماط الـ Overlay */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.4s ease;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* أنماط الزر */
+#menu-btn {
+  transition: transform 0.3s ease;
+}
+
+#menu-btn.active {
+  transform: rotate(90deg);
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none; /* للإنترنت إكسبلورر */
+  scrollbar-width: none; /* لـ Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* لـ Chrome و Safari */
+}
 .colored-draw {
   background-color: #8b5cf6;
 
@@ -181,10 +246,10 @@ body {
   /* .servise-card {
     width: 110px;
   } */
-  .service{
+  .service {
     height: 160px;
   }
-  .store-explain{
+  .store-explain {
     height: 130px;
   }
   .material-card {
@@ -228,12 +293,10 @@ body {
 
 /* Medium devices (tablets) */
 @media (max-width: 768px) {
-
 }
 
 /* Large devices (small laptops) */
 @media (min-width: 992px) {
- 
 }
 
 /* Extra large devices (desktops) */

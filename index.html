@@ -33,7 +33,11 @@
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <link rel="stylesheet" href="style.css" />
+ 
   </head>
   <body>
      <!-- السايدبار -->
@@ -45,9 +49,7 @@
       <div class="p-2">
         <ul class="space-y-4 text-lg">
           <li>
-            <a href="#" class="block p-2 hover:bg-[var(--main-color)] rounded"
-              ><i class="fa-solid fa-star text-yellow-500 ml-3"></i></i> طرق الدفع</a
-            >
+            <a href="#" class="block p-2 hover:bg-[var(--main-color)] rounded" ><i class="fa-solid fa-star text-yellow-500 ml-3"></i></i> طرق الدفع</a>
           </li>
           <li>
             <a href="#" class="block p-2 hover:bg-[var(--main-color)] rounded"
@@ -97,7 +99,7 @@
     
     <!-- ............... -->
     <main class="page-content" id="main-content">
- <!-- شريط إعلاني -->
+ <!--  top header -->
  <div class="sticky top-0 z-50 w-full ">
   <div
     class="text-[var(--top-header-text)] bg-[var(--top-header-bg)] text-center py-1 md:py-2 text-sm md:text-lg font-bold w-full"
@@ -143,24 +145,28 @@
 <section class="main-header mb-5 overflow-hidden">
     <!-- المحتوى -->
     <div
-    class="fade-in-down text-center mt-16 sm:mt-20 space-y-3 md:space-y-10 px-2 sm:px-4"
+    data-aos="fade-up"
+    data-aos-duration="3000"
+    class="text-center mt-16 sm:mt-20 space-y-3 md:space-y-10 px-2 sm:px-4"
   >
-    <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">
+    <h1    class="text-2xl sm:text-4xl md:text-5xl font-bold">
       شانس بلاي || CHANCE PALY
     </h1>
-    <p class="text-sm sm:text-2xl md:text-3xl text-gray-300">
+    <p  class="text-sm sm:text-2xl md:text-3xl text-gray-300">
       حمل، جرب، واستمتع.. كل شي بلس
     </p>
 
     <!-- الأزرار -->
     <div class="space-y-4 mt-8 sm:mt-10">
       <button
+     
         class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-3 py-3 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white cursor-pointer"
       >
         تثبيت تطبيق ابل
       </button>
       <br />
       <button
+     
         class="w-40 sm:w-72 md:w-80 bg-gradient-to-r from-purple-500 to-indigo-500 px-2 sm:px-6 py-3 sm:py-4 rounded-full text-white font-bold shadow-lg text-sm sm:text-xl md:text-2xl border border-white cursor-pointer"
       >
         تثبيت تطبيق الاندرويد
@@ -289,11 +295,13 @@
 
       <!-- محتوى الإحصائيات -->
       <div
+    
         id="stats-cards"
         class="z-10 flex items-center justify-center gap-5 md:gap-15 w-full mt-20 mb-20 text-center flex-wrap"
       >
         <!-- بطاقة -->
         <div
+        
           id="visitors-card"
           class="gradient-border-total bg-[#0d0529] rounded-3xl w-25 h-25 sm:w-30 sm:h-30 md:w-50 md:h-50 flex flex-col gap-1 items-center justify-center"
         >
@@ -384,7 +392,9 @@
       </div>
 
       <div
-        class="fade-in-down swiper w-full max-w-6xl centered-slide-carousel relative"
+      data-aos="fade-up"
+      data-aos-duration="3000"
+        class=" swiper w-full max-w-6xl centered-slide-carousel relative"
       >
         <div class="swiper-wrapper py-30 sm:py-35 flex items-center">
           <div class="swiper-slide flex justify-center">
@@ -542,7 +552,7 @@
               >
                 <!-- صورة الدايموند -->
                 <img
-                  src="/images/diamond-1.png"
+                  src="/images/diamond-3.png"
                   alt="Icon"
                   class="absolute -top-13 sm:-top-15 left-1/2 -translate-x-1/2 w-22 sm:w-25 md-w-30 h-22 sm:h-25 md-h-30"
                 />
@@ -716,7 +726,8 @@
 
 
       <!-- بطاقة خدمة -->
-      <div class="px-3 sm:px-6 md:px-8">
+      <div   data-aos="fade-up"
+      data-aos-duration="3000" class="px-3 sm:px-6 md:px-8">
         <div
           class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 pt-6 w-full max-w-screen-lg mx-auto"
         >
@@ -820,6 +831,8 @@
 
       <!-- سلايدر البطاقات -->
       <div
+      data-aos="fade-up"
+      data-aos-duration="3000"
         class="swiper value-carousel w-full max-w-4xl relative swiper-container"
       >
         <div
@@ -1059,6 +1072,8 @@
       <!-- الشبكة -->
       <div class="px-3 sm:px-6 md:px-8">
         <div
+        data-aos="fade-up"
+        data-aos-duration="3000"
           class="grid grid-cols-3 gap-3 sm:gap-4 md:gap-6 pt-6 w-full max-w-screen-lg mx-auto"
         >
           <!-- بطاقة -->
@@ -1331,6 +1346,8 @@
 
       <!-- أيقونات التواصل -->
       <div
+      data-aos="fade-right"
+      data-aos-duration="3000"
         id="footer-social-icons"
         class="cursor-pointer flex items-center justify-center mt-8 flex-wrap"
       >
@@ -1373,6 +1390,8 @@
 
       <!-- المحتوى السفلي -->
       <div
+      data-aos="fade-up"
+      data-aos-duration="3000"
         class="flex flex-col md:flex-row justify-center items-start gap-10 mt-12 relative"
       >
         <!-- نبذة عن المتجر -->
@@ -1454,6 +1473,9 @@
   </main>
     <!--................ end..................... -->
     <!--JAVASCRIPT CODE-->
+    <script>
+      AOS.init();
+    </script>
     <script src="./main.js"></script>
   </body>
 </html>

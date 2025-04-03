@@ -101,7 +101,7 @@
   mask-position: center;
 }
 
-html,body {
+body {
   margin: 0;
   font-family: "Cairo", sans-serif;
   background-color: var(--main-color);

@@ -7,6 +7,7 @@
 
 * {
   box-sizing: border-box;
+ 
 }
 /* أنماط السايدبار */
 #sidebar {
@@ -100,7 +101,7 @@
   mask-position: center;
 }
 
-body {
+html,body {
   margin: 0;
   font-family: "Cairo", sans-serif;
   background-color: var(--main-color);

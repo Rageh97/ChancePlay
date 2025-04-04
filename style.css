@@ -2,6 +2,7 @@
   --main-color: #0d0529;
   --text-color: #ffffff;
   --top-header-bg: #a66bff;
+  --field: #2a2147;
   --top-header-text: #ffffff;
 }
 
@@ -244,9 +245,9 @@ body {
   .image-title {
     width: 6rem;
   }
-  /* .servise-card {
-    width: 110px;
-  } */
+  .product-card {
+    height: 280px;
+  }
   .service {
     height: 160px;
   }

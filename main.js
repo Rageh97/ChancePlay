@@ -7,10 +7,10 @@ let swiper = new Swiper(".centered-slide-carousel", {
   spaceBetween: 40,
   slideToClickedSlide: true,
   rtl: true,
-  // autoplay: {
-  //   delay: 2000,
-  //   disableOnInteraction: false,
-  // },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".centered-slide-carousel .swiper-pagination",
     clickable: true,
